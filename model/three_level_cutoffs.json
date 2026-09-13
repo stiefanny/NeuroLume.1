@@ -1,0 +1,29 @@
+{
+  "model": "Stacking",
+  "variant": "NoSMOTE",
+  "score_definition": "100 * model probability; bukan probabilitas klinis",
+  "low_upper_threshold": 0.06183842225368883,
+  "consult_threshold": 0.10046071431198075,
+  "attention": {
+    "threshold": 0.06183842225368883,
+    "target_recall": 0.9,
+    "reason": "fallback_recall_only_accuracy_failed",
+    "oof_accuracy": 0.6357632093933464,
+    "oof_precision": 0.11144578313253012,
+    "oof_recall": 0.9296482412060302,
+    "oof_specificity": 0.6207251221393675,
+    "oof_f2": 0.376628664495114
+  },
+  "consult": {
+    "threshold": 0.10046071431198075,
+    "target_recall": 0.825,
+    "reason": "recall_and_accuracy",
+    "oof_accuracy": 0.735078277886497,
+    "oof_precision": 0.13591433278418452,
+    "oof_recall": 0.8291457286432161,
+    "oof_specificity": 0.7302648495757265,
+    "oof_f2": 0.41044776119402987
+  },
+  "clinical_validation": false,
+  "selection_source": "development whole-stack OOF only"
+}

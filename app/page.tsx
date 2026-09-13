@@ -1,0 +1,5 @@
+import { Assessment } from "@/components/assessment";
+import { SiteFooter, SiteHeader } from "@/components/site-header";
+
+export default function Home(){return <><SiteHeader/><main className="site-shell main-page"><div className="page-intro"><div><span className="eyebrow">Stroke risk &amp; research</span><h1>Kenali faktor risikomu dengan lebih terang.</h1></div><p>NeuroLume membantu membaca pola faktor risiko pada orang dewasa dan lansia. Hasilnya adalah indikasi penelitian, bukan diagnosis stroke.</p></div><Assessment/><section className="trust-row"><Trust number="01" title="Privasi sejak awal" text="Data tidak disimpan sebelum izin etik."/><Trust number="03" title="Tiga model, satu ringkasan" text="XGBoost, LightGBM, dan CatBoost."/><Trust number="♥" title="Berpusat pada manusia" text="Gejala darurat selalu didahulukan."/></section></main><SiteFooter/></>}
+function Trust({number,title,text}:{number:string;title:string;text:string}){return <div><span className="mini-icon">{number}</span><span><strong>{title}</strong>{text}</span></div>}

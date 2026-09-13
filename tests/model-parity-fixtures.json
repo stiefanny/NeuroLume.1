@@ -1,0 +1,3202 @@
+[
+  {
+    "input": {
+      "age": 18,
+      "avg_glucose_level": 40,
+      "bmi": 10,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.002077344572171569,
+      "LightGBM": 0.0018225135842986665,
+      "CatBoost": 0.002139472894281801,
+      "Stacking": 0.000787227614834647
+    }
+  },
+  {
+    "input": {
+      "age": 100,
+      "avg_glucose_level": 300,
+      "bmi": 70,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5058941841125488,
+      "LightGBM": 0.5553331396390101,
+      "CatBoost": 0.6541558599126087,
+      "Stacking": 0.31655964785439267
+    }
+  },
+  {
+    "input": {
+      "age": 52,
+      "avg_glucose_level": 108.4,
+      "bmi": 27.6,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.25053638219833374,
+      "LightGBM": 0.25616595181132595,
+      "CatBoost": 0.35212567579403675,
+      "Stacking": 0.12242984506508257
+    }
+  },
+  {
+    "input": {
+      "age": 61,
+      "avg_glucose_level": 117.2,
+      "bmi": 28.1,
+      "gender": "Male",
+      "hypertension": null,
+      "heart_disease": null,
+      "ever_married": null,
+      "work_type": "Other",
+      "Residence_type": null,
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.2903396785259247,
+      "LightGBM": 0.3589802059048497,
+      "CatBoost": 0.5395186225782641,
+      "Stacking": 0.16995995956915058
+    }
+  },
+  {
+    "input": {
+      "age": 36.102,
+      "avg_glucose_level": 280.087,
+      "bmi": 46.13,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.04595094546675682,
+      "LightGBM": 0.044008052090230135,
+      "CatBoost": 0.09043318419912644,
+      "Stacking": 0.01976205532228833
+    }
+  },
+  {
+    "input": {
+      "age": 67.414,
+      "avg_glucose_level": 162.015,
+      "bmi": 64.548,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3567996323108673,
+      "LightGBM": 0.36930093244448153,
+      "CatBoost": 0.5347360071040922,
+      "Stacking": 0.19341108026732493
+    }
+  },
+  {
+    "input": {
+      "age": 69.947,
+      "avg_glucose_level": 105.207,
+      "bmi": 30.25,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3872655928134918,
+      "LightGBM": 0.3058373206609031,
+      "CatBoost": 0.5329816278846212,
+      "Stacking": 0.1842539601439624
+    }
+  },
+  {
+    "input": {
+      "age": 20.827,
+      "avg_glucose_level": 234.302,
+      "bmi": 12.741,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.002907912712544203,
+      "LightGBM": 0.0027704370324061907,
+      "CatBoost": 0.005939182232953414,
+      "Stacking": 0.0012305017709951746
+    }
+  },
+  {
+    "input": {
+      "age": 63.622,
+      "avg_glucose_level": 144.428,
+      "bmi": 31.505,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3380551338195801,
+      "LightGBM": 0.3009126394276529,
+      "CatBoost": 0.4953486640435672,
+      "Stacking": 0.16612916825673885
+    }
+  },
+  {
+    "input": {
+      "age": 83.129,
+      "avg_glucose_level": 198.565,
+      "bmi": 25.556,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.48397672176361084,
+      "LightGBM": 0.38789121723084885,
+      "CatBoost": 0.38536119099311644,
+      "Stacking": 0.22819882471807806
+    }
+  },
+  {
+    "input": {
+      "age": 86.704,
+      "avg_glucose_level": 109.976,
+      "bmi": 42.428,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.424146831035614,
+      "LightGBM": 0.38853737576766184,
+      "CatBoost": 0.460231602937348,
+      "Stacking": 0.2149584527661914
+    }
+  },
+  {
+    "input": {
+      "age": 61.967,
+      "avg_glucose_level": 171.969,
+      "bmi": 27.089,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.4242006242275238,
+      "LightGBM": 0.38933558483547454,
+      "CatBoost": 0.547059664291308,
+      "Stacking": 0.22183736272343096
+    }
+  },
+  {
+    "input": {
+      "age": 76.452,
+      "avg_glucose_level": 246.641,
+      "bmi": 60.347,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5566722750663757,
+      "LightGBM": 0.47799601634070793,
+      "CatBoost": 0.5488021130093204,
+      "Stacking": 0.29848603633973253
+    }
+  },
+  {
+    "input": {
+      "age": 56.631,
+      "avg_glucose_level": 76.491,
+      "bmi": 41.678,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.26428931951522827,
+      "LightGBM": 0.3262119698713925,
+      "CatBoost": 0.20055123233808342,
+      "Stacking": 0.13248605356525156
+    }
+  },
+  {
+    "input": {
+      "age": 42.436,
+      "avg_glucose_level": 96.643,
+      "bmi": 26.898,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.03031853958964348,
+      "LightGBM": 0.05306494687285312,
+      "CatBoost": 0.03040985176332789,
+      "Stacking": 0.015513104240864639
+    }
+  },
+  {
+    "input": {
+      "age": 99.563,
+      "avg_glucose_level": 196.581,
+      "bmi": 35.795,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.6373667120933533,
+      "LightGBM": 0.6416704548718948,
+      "CatBoost": 0.41851895597332905,
+      "Stacking": 0.3834480468405549
+    }
+  },
+  {
+    "input": {
+      "age": 44.33,
+      "avg_glucose_level": 258.36,
+      "bmi": 31.423,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.11992277950048447,
+      "LightGBM": 0.13222243548887633,
+      "CatBoost": 0.30399489543283925,
+      "Stacking": 0.05990009559118019
+    }
+  },
+  {
+    "input": {
+      "age": 74.423,
+      "avg_glucose_level": 48.306,
+      "bmi": 43.579,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.1437036246061325,
+      "LightGBM": 0.1158287439102319,
+      "CatBoost": 0.030181206904261997,
+      "Stacking": 0.04678077014515399
+    }
+  },
+  {
+    "input": {
+      "age": 33.585,
+      "avg_glucose_level": 244.406,
+      "bmi": 54.677,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.018289444968104362,
+      "LightGBM": 0.022326042712228062,
+      "CatBoost": 0.2722497977933025,
+      "Stacking": 0.011074185384477474
+    }
+  },
+  {
+    "input": {
+      "age": 19.02,
+      "avg_glucose_level": 181.997,
+      "bmi": 53.555,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.008244655095040798,
+      "LightGBM": 0.006436461550613822,
+      "CatBoost": 0.012608529167979955,
+      "Stacking": 0.0031026846016031155
+    }
+  },
+  {
+    "input": {
+      "age": 18.608,
+      "avg_glucose_level": 163.32,
+      "bmi": 37.115,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.012858783826231956,
+      "LightGBM": 0.004954516555092111,
+      "CatBoost": 0.10557888227055887,
+      "Stacking": 0.004377883468341348
+    }
+  },
+  {
+    "input": {
+      "age": 41.525,
+      "avg_glucose_level": 201.987,
+      "bmi": 49.05,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.08649326115846634,
+      "LightGBM": 0.07917127386841345,
+      "CatBoost": 0.06082986823831588,
+      "Stacking": 0.033072445921116495
+    }
+  },
+  {
+    "input": {
+      "age": 38.687,
+      "avg_glucose_level": 65.77,
+      "bmi": 15.97,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.01687687076628208,
+      "LightGBM": 0.011744463979337335,
+      "CatBoost": 0.011836939231788815,
+      "Stacking": 0.005552914505623649
+    }
+  },
+  {
+    "input": {
+      "age": 26.03,
+      "avg_glucose_level": 237.747,
+      "bmi": 55.707,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.011963065713644028,
+      "LightGBM": 0.013523864843742427,
+      "CatBoost": 0.030471680270544487,
+      "Stacking": 0.005583144473738825
+    }
+  },
+  {
+    "input": {
+      "age": 35.773,
+      "avg_glucose_level": 45.488,
+      "bmi": 11.695,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.0018304799450561404,
+      "LightGBM": 0.0017432955376396814,
+      "CatBoost": 0.0039010327150325536,
+      "Stacking": 0.000779053691554317
+    }
+  },
+  {
+    "input": {
+      "age": 25.122,
+      "avg_glucose_level": 64.437,
+      "bmi": 44.227,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.007680946495383978,
+      "LightGBM": 0.006566348875856948,
+      "CatBoost": 0.014526013072711313,
+      "Stacking": 0.003075894345740105
+    }
+  },
+  {
+    "input": {
+      "age": 99.898,
+      "avg_glucose_level": 91.807,
+      "bmi": 62.997,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.3283047378063202,
+      "LightGBM": 0.49296735297197725,
+      "CatBoost": 0.3384195533973975,
+      "Stacking": 0.203628382773504
+    }
+  },
+  {
+    "input": {
+      "age": 74.816,
+      "avg_glucose_level": 199.617,
+      "bmi": 14.942,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.4023588299751282,
+      "LightGBM": 0.319312044290124,
+      "CatBoost": 0.3669005604563413,
+      "Stacking": 0.18129708816283607
+    }
+  },
+  {
+    "input": {
+      "age": 18.604,
+      "avg_glucose_level": 294.026,
+      "bmi": 51.211,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.017719808965921402,
+      "LightGBM": 0.013293225051785089,
+      "CatBoost": 0.14185081080446055,
+      "Stacking": 0.008004167540817396
+    }
+  },
+  {
+    "input": {
+      "age": 47.366,
+      "avg_glucose_level": 258.958,
+      "bmi": 61.832,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.15208490192890167,
+      "LightGBM": 0.1963572720041652,
+      "CatBoost": 0.12010990198578476,
+      "Stacking": 0.07197158773998345
+    }
+  },
+  {
+    "input": {
+      "age": 31.906,
+      "avg_glucose_level": 189.864,
+      "bmi": 52.221,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.020889384672045708,
+      "LightGBM": 0.01940901356436646,
+      "CatBoost": 0.04592613005118647,
+      "Stacking": 0.008857578670905517
+    }
+  },
+  {
+    "input": {
+      "age": 96.129,
+      "avg_glucose_level": 143.447,
+      "bmi": 58.458,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3050363063812256,
+      "LightGBM": 0.43482839651109084,
+      "CatBoost": 0.4209705327132231,
+      "Stacking": 0.18649904134683723
+    }
+  },
+  {
+    "input": {
+      "age": 79.791,
+      "avg_glucose_level": 207.507,
+      "bmi": 21.268,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.5717757344245911,
+      "LightGBM": 0.48650296254973313,
+      "CatBoost": 0.6235943989523413,
+      "Stacking": 0.3149106056422261
+    }
+  },
+  {
+    "input": {
+      "age": 40.708,
+      "avg_glucose_level": 134.085,
+      "bmi": 52.471,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.04356265813112259,
+      "LightGBM": 0.06754558102485866,
+      "CatBoost": 0.04531079322760018,
+      "Stacking": 0.021420211730928177
+    }
+  },
+  {
+    "input": {
+      "age": 77.84,
+      "avg_glucose_level": 71.1,
+      "bmi": 12.5,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.5468870997428894,
+      "LightGBM": 0.6437369547417793,
+      "CatBoost": 0.6182017963037751,
+      "Stacking": 0.364634555987959
+    }
+  },
+  {
+    "input": {
+      "age": 53.545,
+      "avg_glucose_level": 113.666,
+      "bmi": 64.79,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.22515685856342316,
+      "LightGBM": 0.2054988094884574,
+      "CatBoost": 0.0948215786285882,
+      "Stacking": 0.08799311438049003
+    }
+  },
+  {
+    "input": {
+      "age": 90.885,
+      "avg_glucose_level": 191.082,
+      "bmi": 41.721,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.45646584033966064,
+      "LightGBM": 0.48428838518807027,
+      "CatBoost": 0.32507725391806147,
+      "Stacking": 0.24345617742524583
+    }
+  },
+  {
+    "input": {
+      "age": 40.605,
+      "avg_glucose_level": 287.659,
+      "bmi": 38.749,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.043032206594944,
+      "LightGBM": 0.0930992072900884,
+      "CatBoost": 0.08917741139229692,
+      "Stacking": 0.026584159917023995
+    }
+  },
+  {
+    "input": {
+      "age": 46.165,
+      "avg_glucose_level": 203.773,
+      "bmi": 45.942,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.2649589478969574,
+      "LightGBM": 0.23865033806564648,
+      "CatBoost": 0.33969033318983927,
+      "Stacking": 0.12128718170512418
+    }
+  },
+  {
+    "input": {
+      "age": 99.059,
+      "avg_glucose_level": 87.134,
+      "bmi": 37.076,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.43601375818252563,
+      "LightGBM": 0.5719678442828977,
+      "CatBoost": 0.39114478062199526,
+      "Stacking": 0.27054035598686593
+    }
+  },
+  {
+    "input": {
+      "age": 27.131,
+      "avg_glucose_level": 192.79,
+      "bmi": 21.405,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.004996193572878838,
+      "LightGBM": 0.007144482189778195,
+      "CatBoost": 0.006329820003266719,
+      "Stacking": 0.00237662242613461
+    }
+  },
+  {
+    "input": {
+      "age": 82.312,
+      "avg_glucose_level": 175.045,
+      "bmi": 19.136,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.43084201216697693,
+      "LightGBM": 0.5122089052835934,
+      "CatBoost": 0.6375769005481611,
+      "Stacking": 0.2707600789023438
+    }
+  },
+  {
+    "input": {
+      "age": 64.171,
+      "avg_glucose_level": 281.396,
+      "bmi": 51.728,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.39795589447021484,
+      "LightGBM": 0.5361873722012255,
+      "CatBoost": 0.7099366239629396,
+      "Stacking": 0.2735874468283665
+    }
+  },
+  {
+    "input": {
+      "age": 59.074,
+      "avg_glucose_level": 272.848,
+      "bmi": 59.889,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.4099339246749878,
+      "LightGBM": 0.49321158751900157,
+      "CatBoost": 0.2673971454551904,
+      "Stacking": 0.22482966865341433
+    }
+  },
+  {
+    "input": {
+      "age": 35.449,
+      "avg_glucose_level": 221.232,
+      "bmi": 47.8,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.03923177346587181,
+      "LightGBM": 0.03144212700811815,
+      "CatBoost": 0.12358159566325341,
+      "Stacking": 0.016486810194401784
+    }
+  },
+  {
+    "input": {
+      "age": 37.374,
+      "avg_glucose_level": 218.346,
+      "bmi": 63.763,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.012281862087547779,
+      "LightGBM": 0.023670146241963196,
+      "CatBoost": 0.15457054283930063,
+      "Stacking": 0.008712311871126822
+    }
+  },
+  {
+    "input": {
+      "age": 64.477,
+      "avg_glucose_level": 240.066,
+      "bmi": 17.665,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.23997120559215546,
+      "LightGBM": 0.26788572308602976,
+      "CatBoost": 0.18423522211416007,
+      "Stacking": 0.11220049716794206
+    }
+  },
+  {
+    "input": {
+      "age": 27.554,
+      "avg_glucose_level": 164.996,
+      "bmi": 33.616,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.010023710317909718,
+      "LightGBM": 0.004306190640230938,
+      "CatBoost": 0.07922893919271716,
+      "Stacking": 0.00354667966761251
+    }
+  },
+  {
+    "input": {
+      "age": 44.798,
+      "avg_glucose_level": 234.844,
+      "bmi": 28.107,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.11034690588712692,
+      "LightGBM": 0.17136450900533076,
+      "CatBoost": 0.050697916526692324,
+      "Stacking": 0.0520230561536218
+    }
+  },
+  {
+    "input": {
+      "age": 63.685,
+      "avg_glucose_level": 215.418,
+      "bmi": 65.717,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.2670423984527588,
+      "LightGBM": 0.27359706556330887,
+      "CatBoost": 0.29432071758544354,
+      "Stacking": 0.12769221184768134
+    }
+  },
+  {
+    "input": {
+      "age": 80.283,
+      "avg_glucose_level": 157.451,
+      "bmi": 51.475,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.45504939556121826,
+      "LightGBM": 0.5527189053226741,
+      "CatBoost": 0.7021150534582256,
+      "Stacking": 0.30065177705094304
+    }
+  },
+  {
+    "input": {
+      "age": 18.595,
+      "avg_glucose_level": 51.372,
+      "bmi": 35.673,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.009145674295723438,
+      "LightGBM": 0.006977013936596349,
+      "CatBoost": 0.04679381608883672,
+      "Stacking": 0.003912378674617352
+    }
+  },
+  {
+    "input": {
+      "age": 84.231,
+      "avg_glucose_level": 133.196,
+      "bmi": 10.791,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5885413289070129,
+      "LightGBM": 0.5718298871061246,
+      "CatBoost": 0.6736055889484157,
+      "Stacking": 0.35973424392599873
+    }
+  },
+  {
+    "input": {
+      "age": 98.42,
+      "avg_glucose_level": 215.078,
+      "bmi": 15.535,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.5809022188186646,
+      "LightGBM": 0.5839684013660364,
+      "CatBoost": 0.7501888589855499,
+      "Stacking": 0.370885022975698
+    }
+  },
+  {
+    "input": {
+      "age": 20.335,
+      "avg_glucose_level": 109.675,
+      "bmi": 37.1,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.006025166250765324,
+      "LightGBM": 0.004623787290289926,
+      "CatBoost": 0.02121892757370032,
+      "Stacking": 0.0024730166688293714
+    }
+  },
+  {
+    "input": {
+      "age": 63.222,
+      "avg_glucose_level": 294.543,
+      "bmi": 18.84,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.22668859362602234,
+      "LightGBM": 0.26422121844580154,
+      "CatBoost": 0.26135741819195646,
+      "Stacking": 0.11296488723327597
+    }
+  },
+  {
+    "input": {
+      "age": 74.439,
+      "avg_glucose_level": 75.747,
+      "bmi": 60.96,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.31322747468948364,
+      "LightGBM": 0.32899500498698625,
+      "CatBoost": 0.3009814702701339,
+      "Stacking": 0.15409208813397887
+    }
+  },
+  {
+    "input": {
+      "age": 84.293,
+      "avg_glucose_level": 282.307,
+      "bmi": 26.805,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.4866167902946472,
+      "LightGBM": 0.36916547171196284,
+      "CatBoost": 0.154221981119117,
+      "Stacking": 0.20026530044921784
+    }
+  },
+  {
+    "input": {
+      "age": 79.463,
+      "avg_glucose_level": 112.081,
+      "bmi": 32.862,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5850580334663391,
+      "LightGBM": 0.5613480843361801,
+      "CatBoost": 0.5999302243174129,
+      "Stacking": 0.3459921375113727
+    }
+  },
+  {
+    "input": {
+      "age": 55.439,
+      "avg_glucose_level": 192.114,
+      "bmi": 16.046,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.21161238849163055,
+      "LightGBM": 0.2425031543697195,
+      "CatBoost": 0.21001090560614885,
+      "Stacking": 0.10139246055178375
+    }
+  },
+  {
+    "input": {
+      "age": 98.042,
+      "avg_glucose_level": 68.599,
+      "bmi": 45.089,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5175459384918213,
+      "LightGBM": 0.6258692843563194,
+      "CatBoost": 0.34044944879871347,
+      "Stacking": 0.3165286365186542
+    }
+  },
+  {
+    "input": {
+      "age": 79.562,
+      "avg_glucose_level": 130.169,
+      "bmi": 66.969,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.2755545377731323,
+      "LightGBM": 0.4015539287599625,
+      "CatBoost": 0.27232612827773606,
+      "Stacking": 0.15830842330242859
+    }
+  },
+  {
+    "input": {
+      "age": 78.161,
+      "avg_glucose_level": 151.32,
+      "bmi": 49.263,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5953420996665955,
+      "LightGBM": 0.44582613242372615,
+      "CatBoost": 0.3488806457692898,
+      "Stacking": 0.2835901330882927
+    }
+  },
+  {
+    "input": {
+      "age": 83.557,
+      "avg_glucose_level": 255.56,
+      "bmi": 33.059,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.6348563432693481,
+      "LightGBM": 0.615889429287357,
+      "CatBoost": 0.6225766273818462,
+      "Stacking": 0.3931636327437204
+    }
+  },
+  {
+    "input": {
+      "age": 63.712,
+      "avg_glucose_level": 175.443,
+      "bmi": 50.573,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.2956734299659729,
+      "LightGBM": 0.3236006777145476,
+      "CatBoost": 0.5326711406177668,
+      "Stacking": 0.16202691185363632
+    }
+  },
+  {
+    "input": {
+      "age": 73.068,
+      "avg_glucose_level": 109.607,
+      "bmi": 46.251,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3513619005680084,
+      "LightGBM": 0.3541439873494141,
+      "CatBoost": 0.2623405526117153,
+      "Stacking": 0.16836036525029557
+    }
+  },
+  {
+    "input": {
+      "age": 91.351,
+      "avg_glucose_level": 234.611,
+      "bmi": 67.224,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.464731901884079,
+      "LightGBM": 0.4908494081493719,
+      "CatBoost": 0.49718335202268976,
+      "Stacking": 0.263623117760501
+    }
+  },
+  {
+    "input": {
+      "age": 52.586,
+      "avg_glucose_level": 81.879,
+      "bmi": 52.378,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.08602478355169296,
+      "LightGBM": 0.0700043058825793,
+      "CatBoost": 0.08383928976311117,
+      "Stacking": 0.03243407313544062
+    }
+  },
+  {
+    "input": {
+      "age": 70.268,
+      "avg_glucose_level": 45.932,
+      "bmi": 46.287,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.2652014195919037,
+      "LightGBM": 0.3796526036207967,
+      "CatBoost": 0.14636068515670556,
+      "Stacking": 0.13933016370617574
+    }
+  },
+  {
+    "input": {
+      "age": 24.631,
+      "avg_glucose_level": 93.175,
+      "bmi": 61.02,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.007522775791585445,
+      "LightGBM": 0.005801391673939963,
+      "CatBoost": 0.03482515193073152,
+      "Stacking": 0.0031933631142468215
+    }
+  },
+  {
+    "input": {
+      "age": 42.0,
+      "avg_glucose_level": 263.064,
+      "bmi": 17.234,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.00955574307590723,
+      "LightGBM": 0.02689709636875287,
+      "CatBoost": 0.00700683641217657,
+      "Stacking": 0.005711948725886212
+    }
+  },
+  {
+    "input": {
+      "age": 94.071,
+      "avg_glucose_level": 299.482,
+      "bmi": 47.425,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.7161055207252502,
+      "LightGBM": 0.6602091585203589,
+      "CatBoost": 0.276404581551062,
+      "Stacking": 0.4149574606600384
+    }
+  },
+  {
+    "input": {
+      "age": 36.76,
+      "avg_glucose_level": 285.141,
+      "bmi": 25.748,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.004437247756868601,
+      "LightGBM": 0.012959765469290986,
+      "CatBoost": 0.008837882070962873,
+      "Stacking": 0.003004086829577088
+    }
+  },
+  {
+    "input": {
+      "age": 87.625,
+      "avg_glucose_level": 280.07,
+      "bmi": 59.497,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.4507414698600769,
+      "LightGBM": 0.4805934219238991,
+      "CatBoost": 0.4535728774898259,
+      "Stacking": 0.2515925955244895
+    }
+  },
+  {
+    "input": {
+      "age": 73.366,
+      "avg_glucose_level": 69.079,
+      "bmi": 47.467,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.4693959057331085,
+      "LightGBM": 0.4170420869113945,
+      "CatBoost": 0.17859848225952313,
+      "Stacking": 0.21204607399926909
+    }
+  },
+  {
+    "input": {
+      "age": 50.492,
+      "avg_glucose_level": 45.624,
+      "bmi": 14.508,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.032303906977176666,
+      "LightGBM": 0.024673903646060084,
+      "CatBoost": 0.03514061496845889,
+      "Stacking": 0.011684917173581237
+    }
+  },
+  {
+    "input": {
+      "age": 31.893,
+      "avg_glucose_level": 58.252,
+      "bmi": 41.172,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.010491635650396347,
+      "LightGBM": 0.011525667288776138,
+      "CatBoost": 0.011420017184880622,
+      "Stacking": 0.0043920316667245005
+    }
+  },
+  {
+    "input": {
+      "age": 57.775,
+      "avg_glucose_level": 267.274,
+      "bmi": 41.187,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.42455989122390747,
+      "LightGBM": 0.31928144418897386,
+      "CatBoost": 0.27205894190959173,
+      "Stacking": 0.18034611274979637
+    }
+  },
+  {
+    "input": {
+      "age": 28.307,
+      "avg_glucose_level": 171.924,
+      "bmi": 36.703,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.007928315550088882,
+      "LightGBM": 0.007045144218482737,
+      "CatBoost": 0.012726046251360527,
+      "Stacking": 0.003168253325433598
+    }
+  },
+  {
+    "input": {
+      "age": 68.892,
+      "avg_glucose_level": 256.96,
+      "bmi": 46.302,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.6522597670555115,
+      "LightGBM": 0.6345225796126858,
+      "CatBoost": 0.8517021651828519,
+      "Stacking": 0.44363557355928274
+    }
+  },
+  {
+    "input": {
+      "age": 30.694,
+      "avg_glucose_level": 84.952,
+      "bmi": 66.497,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.006853744853287935,
+      "LightGBM": 0.0054354437604422915,
+      "CatBoost": 0.05467381275521203,
+      "Stacking": 0.003134908760293363
+    }
+  },
+  {
+    "input": {
+      "age": 19.935,
+      "avg_glucose_level": 141.177,
+      "bmi": 53.419,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.008772256784141064,
+      "LightGBM": 0.006123724197880658,
+      "CatBoost": 0.051730688537459726,
+      "Stacking": 0.0036744883422216226
+    }
+  },
+  {
+    "input": {
+      "age": 88.046,
+      "avg_glucose_level": 257.364,
+      "bmi": 14.981,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.4542131721973419,
+      "LightGBM": 0.4979823896170451,
+      "CatBoost": 0.4620050724243581,
+      "Stacking": 0.25911120906891777
+    }
+  },
+  {
+    "input": {
+      "age": 33.1,
+      "avg_glucose_level": 153.032,
+      "bmi": 27.532,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.013726708479225636,
+      "LightGBM": 0.012743150151099326,
+      "CatBoost": 0.04884061631356501,
+      "Stacking": 0.006130138909966507
+    }
+  },
+  {
+    "input": {
+      "age": 76.605,
+      "avg_glucose_level": 225.3,
+      "bmi": 13.949,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3898330330848694,
+      "LightGBM": 0.2921624658625997,
+      "CatBoost": 0.27684843062928133,
+      "Stacking": 0.16357461952711722
+    }
+  },
+  {
+    "input": {
+      "age": 93.732,
+      "avg_glucose_level": 120.937,
+      "bmi": 32.718,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.4399106502532959,
+      "LightGBM": 0.45491947316146186,
+      "CatBoost": 0.4095580835306153,
+      "Stacking": 0.23616005753971894
+    }
+  },
+  {
+    "input": {
+      "age": 93.788,
+      "avg_glucose_level": 231.903,
+      "bmi": 29.397,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5729349851608276,
+      "LightGBM": 0.5736866118001489,
+      "CatBoost": 0.565861354817873,
+      "Stacking": 0.3420273138665785
+    }
+  },
+  {
+    "input": {
+      "age": 56.365,
+      "avg_glucose_level": 145.743,
+      "bmi": 17.643,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.1493694931268692,
+      "LightGBM": 0.16057439918980293,
+      "CatBoost": 0.13229731601745337,
+      "Stacking": 0.06554684289678155
+    }
+  },
+  {
+    "input": {
+      "age": 64.889,
+      "avg_glucose_level": 268.258,
+      "bmi": 61.62,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.3434257209300995,
+      "LightGBM": 0.2832781447244673,
+      "CatBoost": 0.22858506000412507,
+      "Stacking": 0.14535767803240057
+    }
+  },
+  {
+    "input": {
+      "age": 89.949,
+      "avg_glucose_level": 262.624,
+      "bmi": 11.914,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5916979312896729,
+      "LightGBM": 0.5710273065173077,
+      "CatBoost": 0.6437608890508933,
+      "Stacking": 0.35740806917047374
+    }
+  },
+  {
+    "input": {
+      "age": 26.038,
+      "avg_glucose_level": 73.323,
+      "bmi": 22.446,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.004696515388786793,
+      "LightGBM": 0.0030021084748674248,
+      "CatBoost": 0.0035042817342829536,
+      "Stacking": 0.0014997837707275633
+    }
+  },
+  {
+    "input": {
+      "age": 89.81,
+      "avg_glucose_level": 244.01,
+      "bmi": 28.679,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5793611407279968,
+      "LightGBM": 0.5556299217925079,
+      "CatBoost": 0.5732242932574336,
+      "Stacking": 0.3385879486697287
+    }
+  },
+  {
+    "input": {
+      "age": 42.078,
+      "avg_glucose_level": 217.981,
+      "bmi": 31.322,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.041376784443855286,
+      "LightGBM": 0.10155168992498058,
+      "CatBoost": 0.07353897521405622,
+      "Stacking": 0.026534539320715603
+    }
+  },
+  {
+    "input": {
+      "age": 74.377,
+      "avg_glucose_level": 217.37,
+      "bmi": 28.976,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5586620569229126,
+      "LightGBM": 0.447337645465227,
+      "CatBoost": 0.5389057524508081,
+      "Stacking": 0.28759933211740457
+    }
+  },
+  {
+    "input": {
+      "age": 21.156,
+      "avg_glucose_level": 73.937,
+      "bmi": 31.578,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.020852934569120407,
+      "LightGBM": 0.014083159280519186,
+      "CatBoost": 0.06739760154946686,
+      "Stacking": 0.00807993125518389
+    }
+  },
+  {
+    "input": {
+      "age": 88.976,
+      "avg_glucose_level": 264.031,
+      "bmi": 29.694,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.5578146576881409,
+      "LightGBM": 0.5353671807351426,
+      "CatBoost": 0.30066172580339856,
+      "Stacking": 0.2949165164770267
+    }
+  },
+  {
+    "input": {
+      "age": 89.034,
+      "avg_glucose_level": 264.762,
+      "bmi": 42.871,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5753691792488098,
+      "LightGBM": 0.4973940338067583,
+      "CatBoost": 0.546727074779213,
+      "Stacking": 0.3127109445439266
+    }
+  },
+  {
+    "input": {
+      "age": 79.384,
+      "avg_glucose_level": 152.398,
+      "bmi": 22.911,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.4768970012664795,
+      "LightGBM": 0.47663157857622707,
+      "CatBoost": 0.4557673084079965,
+      "Stacking": 0.2598027345682662
+    }
+  },
+  {
+    "input": {
+      "age": 98.226,
+      "avg_glucose_level": 165.208,
+      "bmi": 12.402,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.559395432472229,
+      "LightGBM": 0.5706526669778216,
+      "CatBoost": 0.6469127212309304,
+      "Stacking": 0.34363388602062145
+    }
+  },
+  {
+    "input": {
+      "age": 62.188,
+      "avg_glucose_level": 66.054,
+      "bmi": 30.856,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.22296029329299927,
+      "LightGBM": 0.1595599054194695,
+      "CatBoost": 0.18317466051915432,
+      "Stacking": 0.08398029629323184
+    }
+  },
+  {
+    "input": {
+      "age": 50.831,
+      "avg_glucose_level": 91.677,
+      "bmi": 67.581,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.1228071004152298,
+      "LightGBM": 0.12091393219566396,
+      "CatBoost": 0.11184608783953863,
+      "Stacking": 0.05106165621227339
+    }
+  },
+  {
+    "input": {
+      "age": 31.33,
+      "avg_glucose_level": 87.314,
+      "bmi": 68.739,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.011417552828788757,
+      "LightGBM": 0.007084773218702364,
+      "CatBoost": 0.03887873507301725,
+      "Stacking": 0.004274899035458672
+    }
+  },
+  {
+    "input": {
+      "age": 75.681,
+      "avg_glucose_level": 298.234,
+      "bmi": 12.242,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.34899085760116577,
+      "LightGBM": 0.32752618352700036,
+      "CatBoost": 0.29318248835635097,
+      "Stacking": 0.16317228503679002
+    }
+  },
+  {
+    "input": {
+      "age": 32.845,
+      "avg_glucose_level": 94.731,
+      "bmi": 68.311,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.008573795668780804,
+      "LightGBM": 0.007500335881837285,
+      "CatBoost": 0.013632611857881293,
+      "Stacking": 0.003400284199470339
+    }
+  },
+  {
+    "input": {
+      "age": 63.356,
+      "avg_glucose_level": 189.262,
+      "bmi": 15.688,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.340249240398407,
+      "LightGBM": 0.31693240095954167,
+      "CatBoost": 0.3977152820212289,
+      "Stacking": 0.1650153533394631
+    }
+  },
+  {
+    "input": {
+      "age": 66.229,
+      "avg_glucose_level": 143.707,
+      "bmi": 15.727,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.1579626500606537,
+      "LightGBM": 0.1889845240680387,
+      "CatBoost": 0.3047702684192505,
+      "Stacking": 0.08121685336881244
+    }
+  },
+  {
+    "input": {
+      "age": 73.018,
+      "avg_glucose_level": 102.104,
+      "bmi": 26.479,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.32302698493003845,
+      "LightGBM": 0.32808465016046195,
+      "CatBoost": 0.4458564490502641,
+      "Stacking": 0.1660363496363129
+    }
+  },
+  {
+    "input": {
+      "age": 84.382,
+      "avg_glucose_level": 144.936,
+      "bmi": 19.561,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.44644105434417725,
+      "LightGBM": 0.5465478270548422,
+      "CatBoost": 0.5230590577348989,
+      "Stacking": 0.2776719692960486
+    }
+  },
+  {
+    "input": {
+      "age": 40.803,
+      "avg_glucose_level": 72.664,
+      "bmi": 16.151,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.03075554221868515,
+      "LightGBM": 0.04390705886965226,
+      "CatBoost": 0.012107653831111741,
+      "Stacking": 0.012971725040864817
+    }
+  },
+  {
+    "input": {
+      "age": 62.046,
+      "avg_glucose_level": 41.303,
+      "bmi": 58.215,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.1212804839015007,
+      "LightGBM": 0.15748901433974705,
+      "CatBoost": 0.20051784883000529,
+      "Stacking": 0.061616593218796506
+    }
+  },
+  {
+    "input": {
+      "age": 40.851,
+      "avg_glucose_level": 145.264,
+      "bmi": 42.92,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.040952716022729874,
+      "LightGBM": 0.07598304290346684,
+      "CatBoost": 0.036916447401290124,
+      "Stacking": 0.021410975206188204
+    }
+  },
+  {
+    "input": {
+      "age": 50.634,
+      "avg_glucose_level": 130.233,
+      "bmi": 14.57,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.09805390983819962,
+      "LightGBM": 0.0896976925629749,
+      "CatBoost": 0.059204858742658364,
+      "Stacking": 0.03706965035757665
+    }
+  },
+  {
+    "input": {
+      "age": 34.341,
+      "avg_glucose_level": 42.051,
+      "bmi": 38.181,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.0035379063338041306,
+      "LightGBM": 0.0046126045468114826,
+      "CatBoost": 0.004113674037957429,
+      "Stacking": 0.0016037127742737558
+    }
+  },
+  {
+    "input": {
+      "age": 25.548,
+      "avg_glucose_level": 294.072,
+      "bmi": 58.859,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.015461977571249008,
+      "LightGBM": 0.013902094403826896,
+      "CatBoost": 0.24283199222102195,
+      "Stacking": 0.008234317248714545
+    }
+  },
+  {
+    "input": {
+      "age": 71.446,
+      "avg_glucose_level": 102.704,
+      "bmi": 26.876,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.2993519604206085,
+      "LightGBM": 0.32962011174734995,
+      "CatBoost": 0.35813148013811846,
+      "Stacking": 0.1540581343008776
+    }
+  },
+  {
+    "input": {
+      "age": 63.291,
+      "avg_glucose_level": 86.47,
+      "bmi": 64.149,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.09760001301765442,
+      "LightGBM": 0.09510681007919496,
+      "CatBoost": 0.07575215988134834,
+      "Stacking": 0.039052220027795057
+    }
+  },
+  {
+    "input": {
+      "age": 95.509,
+      "avg_glucose_level": 200.532,
+      "bmi": 33.548,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.6056354641914368,
+      "LightGBM": 0.6245939688456443,
+      "CatBoost": 0.5288598378850092,
+      "Stacking": 0.3730901409562545
+    }
+  },
+  {
+    "input": {
+      "age": 53.902,
+      "avg_glucose_level": 79.916,
+      "bmi": 32.887,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.17358921468257904,
+      "LightGBM": 0.1663337093158736,
+      "CatBoost": 0.24362373020491018,
+      "Stacking": 0.077771080033845
+    }
+  },
+  {
+    "input": {
+      "age": 96.384,
+      "avg_glucose_level": 139.16,
+      "bmi": 63.897,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.33420050144195557,
+      "LightGBM": 0.4078532743689413,
+      "CatBoost": 0.10003756939316027,
+      "Stacking": 0.15891151182714452
+    }
+  },
+  {
+    "input": {
+      "age": 38.858,
+      "avg_glucose_level": 108.472,
+      "bmi": 37.028,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Private",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.030817868188023567,
+      "LightGBM": 0.07145466625306147,
+      "CatBoost": 0.029759648263840296,
+      "Stacking": 0.017779356713013658
+    }
+  },
+  {
+    "input": {
+      "age": 26.205,
+      "avg_glucose_level": 97.912,
+      "bmi": 21.826,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.0020597735419869423,
+      "LightGBM": 0.002934154360970236,
+      "CatBoost": 0.002389267135810479,
+      "Stacking": 0.0009700554290219606
+    }
+  },
+  {
+    "input": {
+      "age": 84.708,
+      "avg_glucose_level": 90.698,
+      "bmi": 21.825,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.639813244342804,
+      "LightGBM": 0.6123770434763474,
+      "CatBoost": 0.5851575038721284,
+      "Stacking": 0.3898973990706297
+    }
+  },
+  {
+    "input": {
+      "age": 48.225,
+      "avg_glucose_level": 52.703,
+      "bmi": 36.261,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.08887141942977905,
+      "LightGBM": 0.09406328630156677,
+      "CatBoost": 0.13164004697408938,
+      "Stacking": 0.03963519895816854
+    }
+  },
+  {
+    "input": {
+      "age": 29.318,
+      "avg_glucose_level": 109.155,
+      "bmi": 48.554,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.015984617173671722,
+      "LightGBM": 0.011163163977009265,
+      "CatBoost": 0.029087013133019122,
+      "Stacking": 0.005864393550099643
+    }
+  },
+  {
+    "input": {
+      "age": 48.332,
+      "avg_glucose_level": 231.608,
+      "bmi": 57.464,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.3326737582683563,
+      "LightGBM": 0.21731220049577543,
+      "CatBoost": 0.19006496863152034,
+      "Stacking": 0.12258047381193378
+    }
+  },
+  {
+    "input": {
+      "age": 60.929,
+      "avg_glucose_level": 131.265,
+      "bmi": 11.445,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.13266348838806152,
+      "LightGBM": 0.1489217886982982,
+      "CatBoost": 0.11571995482605676,
+      "Stacking": 0.058648060407562465
+    }
+  },
+  {
+    "input": {
+      "age": 40.629,
+      "avg_glucose_level": 96.437,
+      "bmi": 11.297,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.012696219608187675,
+      "LightGBM": 0.02686336725366272,
+      "CatBoost": 0.024644010648250343,
+      "Stacking": 0.007505779864427833
+    }
+  },
+  {
+    "input": {
+      "age": 37.606,
+      "avg_glucose_level": 291.537,
+      "bmi": 15.203,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.0032685070764273405,
+      "LightGBM": 0.03679716740978915,
+      "CatBoost": 0.015548024902739724,
+      "Stacking": 0.004344056441379694
+    }
+  },
+  {
+    "input": {
+      "age": 58.525,
+      "avg_glucose_level": 132.847,
+      "bmi": 54.998,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.22455346584320068,
+      "LightGBM": 0.24160555654271967,
+      "CatBoost": 0.08366938288447694,
+      "Stacking": 0.09383312328347836
+    }
+  },
+  {
+    "input": {
+      "age": 35.877,
+      "avg_glucose_level": 104.101,
+      "bmi": 47.576,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.028507404029369354,
+      "LightGBM": 0.021990963929315606,
+      "CatBoost": 0.06282624814787931,
+      "Stacking": 0.01121599828031273
+    }
+  },
+  {
+    "input": {
+      "age": 60.866,
+      "avg_glucose_level": 262.257,
+      "bmi": 60.163,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.2967395782470703,
+      "LightGBM": 0.34805015534907824,
+      "CatBoost": 0.37755271065898977,
+      "Stacking": 0.1590887402805944
+    }
+  },
+  {
+    "input": {
+      "age": 85.855,
+      "avg_glucose_level": 94.443,
+      "bmi": 66.774,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.20457963645458221,
+      "LightGBM": 0.27449001099961756,
+      "CatBoost": 0.16755884298487825,
+      "Stacking": 0.1031757507452048
+    }
+  },
+  {
+    "input": {
+      "age": 85.056,
+      "avg_glucose_level": 290.511,
+      "bmi": 30.397,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.580885112285614,
+      "LightGBM": 0.5029639580359087,
+      "CatBoost": 0.3537764911240006,
+      "Stacking": 0.2982587780186289
+    }
+  },
+  {
+    "input": {
+      "age": 20.141,
+      "avg_glucose_level": 271.545,
+      "bmi": 52.932,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.014086348935961723,
+      "LightGBM": 0.01186697027544827,
+      "CatBoost": 0.0896752566759645,
+      "Stacking": 0.006470827388328548
+    }
+  },
+  {
+    "input": {
+      "age": 65.8,
+      "avg_glucose_level": 203.675,
+      "bmi": 55.977,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.2714650630950928,
+      "LightGBM": 0.2597824708854037,
+      "CatBoost": 0.1475572985682774,
+      "Stacking": 0.11519507715054361
+    }
+  },
+  {
+    "input": {
+      "age": 61.789,
+      "avg_glucose_level": 251.795,
+      "bmi": 52.71,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.43042048811912537,
+      "LightGBM": 0.49372675705156477,
+      "CatBoost": 0.6923197535816873,
+      "Stacking": 0.2698797727797361
+    }
+  },
+  {
+    "input": {
+      "age": 19.756,
+      "avg_glucose_level": 170.484,
+      "bmi": 57.104,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Private",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.013129331171512604,
+      "LightGBM": 0.006691694197243098,
+      "CatBoost": 0.06797909894475977,
+      "Stacking": 0.004756105857531113
+    }
+  },
+  {
+    "input": {
+      "age": 98.938,
+      "avg_glucose_level": 134.514,
+      "bmi": 37.846,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.46408724784851074,
+      "LightGBM": 0.5645508949955906,
+      "CatBoost": 0.24622294780181458,
+      "Stacking": 0.26361450529391006
+    }
+  },
+  {
+    "input": {
+      "age": 67.227,
+      "avg_glucose_level": 271.345,
+      "bmi": 18.94,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.1647680103778839,
+      "LightGBM": 0.18739982808297764,
+      "CatBoost": 0.13887216287805743,
+      "Stacking": 0.07458296039397815
+    }
+  },
+  {
+    "input": {
+      "age": 85.584,
+      "avg_glucose_level": 248.472,
+      "bmi": 37.005,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.572074830532074,
+      "LightGBM": 0.6297613372325453,
+      "CatBoost": 0.4587162184427223,
+      "Stacking": 0.35311492709461184
+    }
+  },
+  {
+    "input": {
+      "age": 24.267,
+      "avg_glucose_level": 228.219,
+      "bmi": 31.073,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.009998894296586514,
+      "LightGBM": 0.008267693327194355,
+      "CatBoost": 0.011946166038437468,
+      "Stacking": 0.0037506143281780093
+    }
+  },
+  {
+    "input": {
+      "age": 25.341,
+      "avg_glucose_level": 272.146,
+      "bmi": 15.16,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.003997097257524729,
+      "LightGBM": 0.00348181813988604,
+      "CatBoost": 0.016345838866133562,
+      "Stacking": 0.0017601230709269372
+    }
+  },
+  {
+    "input": {
+      "age": 31.039,
+      "avg_glucose_level": 249.81,
+      "bmi": 27.632,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.011787020601332188,
+      "LightGBM": 0.009881370275694691,
+      "CatBoost": 0.01689595236897466,
+      "Stacking": 0.004540964236619238
+    }
+  },
+  {
+    "input": {
+      "age": 29.227,
+      "avg_glucose_level": 105.048,
+      "bmi": 49.571,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.01359308511018753,
+      "LightGBM": 0.011759928237583282,
+      "CatBoost": 0.017357320529712464,
+      "Stacking": 0.005240787035595208
+    }
+  },
+  {
+    "input": {
+      "age": 75.372,
+      "avg_glucose_level": 196.813,
+      "bmi": 32.916,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.5598940253257751,
+      "LightGBM": 0.5059719227987203,
+      "CatBoost": 0.6691584261826073,
+      "Stacking": 0.3219679094868913
+    }
+  },
+  {
+    "input": {
+      "age": 85.778,
+      "avg_glucose_level": 191.084,
+      "bmi": 22.791,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.575078010559082,
+      "LightGBM": 0.4957611575803664,
+      "CatBoost": 0.46736930723483266,
+      "Stacking": 0.3044460382506764
+    }
+  },
+  {
+    "input": {
+      "age": 94.243,
+      "avg_glucose_level": 150.417,
+      "bmi": 40.451,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.41659098863601685,
+      "LightGBM": 0.5847285286982726,
+      "CatBoost": 0.22409506996163422,
+      "Stacking": 0.25052669547778994
+    }
+  },
+  {
+    "input": {
+      "age": 48.887,
+      "avg_glucose_level": 74.012,
+      "bmi": 36.956,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.3259836733341217,
+      "LightGBM": 0.1925851225729111,
+      "CatBoost": 0.13616967614905848,
+      "Stacking": 0.1100285122335646
+    }
+  },
+  {
+    "input": {
+      "age": 71.078,
+      "avg_glucose_level": 77.529,
+      "bmi": 29.05,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.3338738679885864,
+      "LightGBM": 0.4019839499253606,
+      "CatBoost": 0.49415720801858454,
+      "Stacking": 0.19229421471457972
+    }
+  },
+  {
+    "input": {
+      "age": 34.142,
+      "avg_glucose_level": 83.864,
+      "bmi": 22.202,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.005860266275703907,
+      "LightGBM": 0.0041035226493286265,
+      "CatBoost": 0.024714167252595568,
+      "Stacking": 0.0023621661096704205
+    }
+  },
+  {
+    "input": {
+      "age": 66.115,
+      "avg_glucose_level": 105.906,
+      "bmi": 62.79,
+      "gender": "Female",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.19669148325920105,
+      "LightGBM": 0.18012960396238223,
+      "CatBoost": 0.3612933110723151,
+      "Stacking": 0.09123664973346846
+    }
+  },
+  {
+    "input": {
+      "age": 81.816,
+      "avg_glucose_level": 191.259,
+      "bmi": 10.68,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.5488348603248596,
+      "LightGBM": 0.585960791478103,
+      "CatBoost": 0.741504413962898,
+      "Stacking": 0.35648403059362777
+    }
+  },
+  {
+    "input": {
+      "age": 63.029,
+      "avg_glucose_level": 97.783,
+      "bmi": 58.118,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "smokes"
+    },
+    "expected": {
+      "XGBoost": 0.1424534171819687,
+      "LightGBM": 0.19596201182237435,
+      "CatBoost": 0.199759170102576,
+      "Stacking": 0.07404024939151121
+    }
+  },
+  {
+    "input": {
+      "age": 76.992,
+      "avg_glucose_level": 197.522,
+      "bmi": 18.955,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.467131644487381,
+      "LightGBM": 0.48736169138908597,
+      "CatBoost": 0.6765395036093936,
+      "Stacking": 0.2798590083667929
+    }
+  },
+  {
+    "input": {
+      "age": 40.286,
+      "avg_glucose_level": 63.106,
+      "bmi": 29.158,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "Never_worked",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.06439361721277237,
+      "LightGBM": 0.1078308183605187,
+      "CatBoost": 0.10188870500847154,
+      "Stacking": 0.034962806562182994
+    }
+  },
+  {
+    "input": {
+      "age": 47.649,
+      "avg_glucose_level": 72.349,
+      "bmi": 51.624,
+      "gender": "Other",
+      "hypertension": "0",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.09219997376203537,
+      "LightGBM": 0.10836142727412788,
+      "CatBoost": 0.11518489230780236,
+      "Stacking": 0.04230493614307933
+    }
+  },
+  {
+    "input": {
+      "age": 71.724,
+      "avg_glucose_level": 99.38,
+      "bmi": 37.874,
+      "gender": "Other",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Govt_job",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.2772409915924072,
+      "LightGBM": 0.23042694526490953,
+      "CatBoost": 0.1271764110779149,
+      "Stacking": 0.10801155834641386
+    }
+  },
+  {
+    "input": {
+      "age": 40.654,
+      "avg_glucose_level": 60.874,
+      "bmi": 35.048,
+      "gender": "Male",
+      "hypertension": "0",
+      "heart_disease": "0",
+      "ever_married": "Yes",
+      "work_type": "Other",
+      "Residence_type": "Rural",
+      "smoking_status": "formerly smoked"
+    },
+    "expected": {
+      "XGBoost": 0.02829655446112156,
+      "LightGBM": 0.036857752456089354,
+      "CatBoost": 0.01455898676318234,
+      "Stacking": 0.011801902741269429
+    }
+  },
+  {
+    "input": {
+      "age": 31.326,
+      "avg_glucose_level": 50.921,
+      "bmi": 14.539,
+      "gender": "Female",
+      "hypertension": "1",
+      "heart_disease": "1",
+      "ever_married": "No",
+      "work_type": "Self-employed",
+      "Residence_type": "Urban",
+      "smoking_status": "never smoked"
+    },
+    "expected": {
+      "XGBoost": 0.009740781038999557,
+      "LightGBM": 0.0041631951138213046,
+      "CatBoost": 0.022435924901001943,
+      "Stacking": 0.002979325434262708
+    }
+  },
+  {
+    "input": {
+      "age": 43.084,
+      "avg_glucose_level": 239.827,
+      "bmi": 24.43,
+      "gender": "Male",
+      "hypertension": "1",
+      "heart_disease": "0",
+      "ever_married": "No",
+      "work_type": "children",
+      "Residence_type": "Rural",
+      "smoking_status": "Unknown"
+    },
+    "expected": {
+      "XGBoost": 0.02665291540324688,
+      "LightGBM": 0.054931497765506335,
+      "CatBoost": 0.01060490691802497,
+      "Stacking": 0.013174163868963152
+    }
+  }
+]
