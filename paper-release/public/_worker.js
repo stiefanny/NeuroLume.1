@@ -100,7 +100,7 @@ const features=['age','avg_glucose_level','bmi','gender','hypertension','heart_d
 const categories={gender:['Male','Female','Other'],ever_married:['Yes','No'],
   work_type:['Private','Self-employed','Govt_job','Never_worked'],
   Residence_type:['Urban','Rural'],smoking_status:['never smoked','formerly smoked','smokes','Unknown']};
-const urgentMessage='If you have sudden one-sided weakness, facial drooping, trouble speaking, or other sudden symptoms, seek immediate medical help or go to an emergency department. Do not wait for an app score.';
+const urgentMessage='This is a warning, not a stroke diagnosis. Sudden warning signs can have several causes, including stroke. Seek immediate medical assessment, even if symptoms improve or stop. Contact local emergency medical services and do not wait for a research score.';
 
 function validate(input,model) {
   if(!input || Array.isArray(input) || typeof input!=='object')return 'Input must be a JSON object.';
