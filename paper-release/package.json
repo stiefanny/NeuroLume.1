@@ -1,0 +1,13 @@
+{
+  "name": "neurolume-cloudflare-paper",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/api.test.mjs",
+    "verify:model": "node scripts/verify-model.mjs",
+    "deploy": "npx wrangler@4.151.0 pages deploy public --project-name neurolume-1"
+  }
+}

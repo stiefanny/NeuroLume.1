@@ -1,0 +1,43 @@
+{
+  "tolerance": 1e-8,
+  "source_model_sha256": "754e330ae1de6eda5e1984e2b1551ec16a7306105eab610597bb692a7399b51e",
+  "holdout": 1022,
+  "extra": 180,
+  "thresholds": {
+    "default": 0.5,
+    "f2": 0.4923120083493016,
+    "clinical": 0.4366863203725091,
+    "precision_guard": 0.572269702977344
+  },
+  "scenarios": {
+    "default": {
+      "TP": 38,
+      "FP": 158,
+      "FN": 12,
+      "TN": 814
+    },
+    "f2": {
+      "TP": 38,
+      "FP": 165,
+      "FN": 12,
+      "TN": 807
+    },
+    "clinical": {
+      "TP": 40,
+      "FP": 214,
+      "FN": 10,
+      "TN": 758
+    },
+    "precision_guard": {
+      "TP": 34,
+      "FP": 120,
+      "FN": 16,
+      "TN": 852
+    }
+  },
+  "holdout_max_absolute_error": 2.9737207696278745e-9,
+  "holdout_max_error_index": 562,
+  "extra_max_absolute_error": 3.3306690738754696e-16,
+  "extra_max_error_index": 71,
+  "status": "PASS"
+}

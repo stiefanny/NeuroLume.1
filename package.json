@@ -7,10 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "node scripts/build-paper-cloudflare.mjs",
     "lint": "eslint . --ignore-pattern .next",
     "verify:model": "node scripts/verify-portable-model.mjs",
-    "pages:dev": "pnpm build && wrangler pages dev out"
+    "pages:dev": "pnpm build && wrangler pages dev out",
+    "build:legacy": "next build --webpack",
+    "test:paper": "node --test paper-release/tests/api.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

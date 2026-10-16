@@ -1,0 +1,13 @@
+import {cp,rm} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const release=path.join(root,'paper-release');
+const build=spawnSync(process.execPath,[path.join(release,'scripts/build.mjs')],{cwd:root,stdio:'inherit'});
+if(build.status!==0)process.exit(build.status??1);
+const tests=spawnSync(process.execPath,['--test',path.join(release,'tests/api.test.mjs')],{cwd:root,stdio:'inherit'});
+if(tests.status!==0)process.exit(tests.status??1);
+await rm(path.join(root,'out'),{recursive:true,force:true});
+await cp(path.join(release,'public'),path.join(root,'out'),{recursive:true});
+console.log('NeuroLume paper release built to out/ for the existing Cloudflare Pages configuration.');

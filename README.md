@@ -1,3 +1,9 @@
+## Deployment model paper terbaru — 16 Oktober 2026
+
+Build produksi menggunakan `paper-release/`, berasal dari paket NeuroLume terbaru dengan model `neurolume-nosmote-paper-e77f77c5-v2.0.0`. Build command tetap `pnpm build` dan output tetap `out`. Tidak perlu melatih ulang model. Lihat [panduan terbaru](paper-release/README.md) dan [hasil verifikasi](paper-release/docs/cloudflare_verification.json). Kode aplikasi lama di bawah tetap disimpan sebagai riwayat implementasi, tetapi bukan halaman yang diterbitkan oleh build produksi ini. Fitur login/admin/Supabase lama tidak diaktifkan oleh rilis model paper ini.
+
+---
+
 # NeuroLume — Stroke Risk & Research
 
 NeuroLume adalah prototipe website edukasi dan penelitian untuk membantu masyarakat mengenali pola faktor risiko stroke berdasarkan model machine learning tabular.

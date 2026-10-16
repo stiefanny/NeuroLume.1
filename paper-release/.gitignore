@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.venv/
+__pycache__/
+tests/parity-fixtures.json
+*.log
+.env
+.env.*
