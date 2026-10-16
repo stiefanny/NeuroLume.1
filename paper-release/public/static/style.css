@@ -10,7 +10,7 @@ main{min-height:calc(100vh - 181px)}
 .tip-list p{font-size:14px;line-height:1.75}.tip-list h3{font-size:16px}.subtle,.sidebar p,.score-card p{font-size:13px;line-height:1.7}
 .notice,.notice p{font-size:13px}.mini-note,.tip-source,.privacy,.field small{font-size:11px;line-height:1.7}
 .field{font-size:13px}.field input,.field select{font-size:15px}.check{font-size:12px}.tabs button{font-size:14px}.ring-center strong{font-variant-numeric:tabular-nums}.range-item b{font-size:12px}.range-item small{font-size:10px}.btn{font-size:14px}.key-value dd{font-size:14px}.key-value dt{font-size:12px}
-.result-grid .card{min-width:0}.score-card .ring .value{animation:score-reveal .8s ease-out}.result-grid .card{animation:appear .25s ease-out}
+.result-grid .card{min-width:0}.score-card .ring .value{animation:score-reveal .8s ease-out}
 @keyframes appear{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @keyframes score-reveal{from{stroke-dasharray:0 434}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
