@@ -79,10 +79,10 @@ export function scoreModel(model, input) {
 
 export function category(model, score) {
   const t = model.metadata.thresholds;
-  if (score >= t.precision_guard) return {code:'higher', label:'Skor lebih tinggi',
-    description:'Skor melewati ambang precision guard penelitian. Bahas hasil dan kondisi kesehatan dengan tenaga kesehatan.'};
-  if (score >= t.clinical) return {code:'attention', label:'Perlu perhatian',
-    description:'Skor melewati ambang clinical penelitian. Hasil ini memerlukan penilaian bersama riwayat dan pemeriksaan kesehatan.'};
-  return {code:'below', label:'Di bawah ambang penelitian',
-    description:'Skor belum melewati ambang clinical. Hasil ini tidak memastikan bebas stroke atau menggantikan pemeriksaan.'};
+  if (score >= t.precision_guard) return {code:'higher', label:'Higher model score',
+    description:'The score meets or exceeds the research precision guard threshold. Discuss this output and your health with a healthcare professional.'};
+  if (score >= t.clinical) return {code:'attention', label:'Needs attention',
+    description:'The score meets or exceeds the research clinical threshold. Interpret it together with your medical history and a clinical assessment.'};
+  return {code:'below', label:'Below the research threshold',
+    description:'The score is below the research clinical threshold. This does not rule out stroke or replace a medical assessment.'};
 }

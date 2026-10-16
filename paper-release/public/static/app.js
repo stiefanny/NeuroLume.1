@@ -1,7 +1,7 @@
 'use strict';
 const $ = (id) => document.getElementById(id);
 let research = false, ready = false, generation = 0, controller = null;
-const scenarioNames = {default: 'Standar', f2: 'Maksimum F₂ OOF', clinical: 'Clinical', precision_guard: 'Precision guard'};
+const scenarioNames = {default: 'Standard', f2: 'Maximum OOF F₂', clinical: 'Clinical', precision_guard: 'Precision guard'};
 const form = $('patient-form');
 function setMode(value) {
   research = value;
@@ -44,10 +44,10 @@ async function start() {
   $('submit-button').disabled = true;
   try {
     const response = await fetch('/api/model', {cache: 'no-store'});
-    if (!response.ok) throw new Error('Model belum siap. Jalankan server sesuai README.');
+    if (!response.ok) throw new Error('The model is not ready. Please try again shortly.');
     const model = await response.json();
     ready = true; $('submit-button').disabled = false;
-    $('model-status').textContent = 'Model NoSMOTE siap';
+    $('model-status').textContent = 'NoSMOTE model ready';
     $('metrics-table').replaceChildren();
     model.holdout.scenarios.forEach(row => {
       const tr = document.createElement('tr');
@@ -57,9 +57,9 @@ async function start() {
       $('metrics-table').appendChild(tr);
     });
     const ranking = model.holdout.scenarios[0];
-    $('model-provenance').textContent = `Artefak: ${model.model_id}. Skor dasar digabung langsung; tanpa transformasi logit tambahan. ROC-AUC ${ranking['ROC-AUC'].toFixed(4)}; AP ${ranking['PR-AUC'].toFixed(4)}.`;
+    $('model-provenance').textContent = `Model: ${model.model_id}. Base probabilities are combined directly, without an additional logit transformation. ROC-AUC ${ranking['ROC-AUC'].toFixed(4)}; AP ${ranking['PR-AUC'].toFixed(4)}.`;
   } catch (err) {
-    $('model-status').textContent = 'Model belum tersedia';
+    $('model-status').textContent = 'Model unavailable';
     $('service-error').textContent = err.message; $('service-error').hidden = false;
   }
 }
@@ -76,7 +76,7 @@ form.addEventListener('submit', async (event) => {
   ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status'].forEach(name => {record[name] = f.get(name);});
   record.consent = f.get('consent') === 'on'; record.sudden_symptoms = false;
   record.threshold_mode = research ? f.get('threshold_mode') : 'clinical';
-  $('submit-button').disabled = true; $('model-status').textContent = 'Menghitung keluaran model…';
+  $('submit-button').disabled = true; $('model-status').textContent = 'Computing model output…';
   $('service-error').hidden = true;
   const requestController = new AbortController();
   controller = requestController;
@@ -85,7 +85,7 @@ form.addEventListener('submit', async (event) => {
     const response = await fetch('/api/predict', {method: 'POST', headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(record), signal: requestController.signal});
     const result = await response.json();
-    if (!response.ok) throw new Error(typeof result.detail === 'string' ? result.detail : 'Periksa kelengkapan, kategori, dan satuan masukan.');
+    if (!response.ok) throw new Error(typeof result.detail === 'string' ? result.detail : 'Check the required inputs, categories, and units.');
     if (ticket !== generation) return;
     if (result.status === 'urgent') { $('urgent-message').textContent = result.message; $('urgent-message').hidden = false; return; }
     $('score').textContent = result.index.toFixed(2); $('score-bar').value = result.index;
@@ -96,15 +96,15 @@ form.addEventListener('submit', async (event) => {
     result.input_summary.forEach(item => {appendText('dt', item.label, $('input-summary')); appendText('dd', item.value, $('input-summary'));});
     $('warnings').replaceChildren(); result.warnings.forEach(text => appendText('li', text, $('warnings')));
     $('binary-detail').hidden = !research;
-    $('binary-detail').textContent = `Keputusan biner: ${result.decision === 1 ? 'positif' : 'negatif'} pada ${scenarioNames[result.threshold_mode]} (τ = ${result.threshold.toFixed(7)}). Kategori komunikasi memakai batas clinical dan precision guard yang tetap.`;
+    $('binary-detail').textContent = `Binary decision: ${result.decision === 1 ? 'positive' : 'negative'} under ${scenarioNames[result.threshold_mode]} (τ = ${result.threshold.toFixed(7)}). Communication categories use the fixed clinical and precision guard boundaries.`;
     $('result').hidden = false; $('result').focus(); $('result').scrollIntoView({behavior: 'smooth', block: 'start'});
   } catch (err) {
     if (ticket !== generation) return;
-    $('service-error').textContent = err.name === 'AbortError' ? 'Permintaan berhenti. Silakan coba kembali.' : err.message;
+    $('service-error').textContent = err.name === 'AbortError' ? 'The request stopped. Please try again.' : err.message;
     $('service-error').hidden = false;
   } finally {
     window.clearTimeout(timeout);
-    if (ticket === generation) {$('submit-button').disabled = !ready; $('model-status').textContent = 'Model NoSMOTE siap'; controller = null;}
+    if (ticket === generation) {$('submit-button').disabled = !ready; $('model-status').textContent = 'NoSMOTE model ready'; controller = null;}
   }
 });
 start();
